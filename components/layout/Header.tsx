@@ -11,7 +11,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <MobileSidebar />
           <Link href="/" className="font-bold text-lg text-gray-900 dark:text-gray-50 hover:text-gray-700 dark:hover:text-gray-200 tracking-tight">
-            Unit Converter Pro
+            Best Converter Pro
           </Link>
         </div>
         <ThemeToggle />

@@ -84,7 +84,7 @@ export function MobileSidebar() {
         <SheetHeader className="p-4 border-b">
           <SheetTitle>
             <Link href="/" onClick={handleLinkClick}>
-              Unit Converter
+              Best Converter
             </Link>
           </SheetTitle>
         </SheetHeader>
@@ -139,7 +139,9 @@ export function MobileSidebar() {
                               : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                           )}
                         >
-                          <span>{converter.name.replace(" Converter", "")}</span>
+                          <span>
+                            {converter.name.replace(" Converter", "")}
+                          </span>
                           <span className="block text-xs text-muted-foreground mt-0.5">
                             {category.name}
                           </span>

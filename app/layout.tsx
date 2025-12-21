@@ -2,14 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Unit Converter - Fast & Accurate Conversion Tool",
-  description: "Professional unit converter for engineering, scientific, and everyday conversions. Convert length, area, volume, temperature, pressure, energy, and more.",
-  keywords: ["unit converter", "conversion calculator", "engineering converter", "metric conversion", "imperial conversion"],
+  title: "Best Converter",
+  description:
+    "Professional Best Converter for engineering, scientific, and everyday conversions. Convert length, area, volume, temperature, pressure, energy, and more.",
+  keywords: [
+    "Best Converter",
+    "conversion calculator",
+    "engineering converter",
+    "metric conversion",
+    "imperial conversion",
+  ],
   openGraph: {
-    title: "Unit Converter - Fast & Accurate Conversion Tool",
-    description: "Professional unit converter for engineering, scientific, and everyday conversions.",
+    title: "Best Converter",
+    description:
+      "Professional Best Converter for engineering, scientific, and everyday conversions.",
     type: "website",
-    siteName: "Unit Converter Pro",
+    siteName: "Best Converter Pro",
   },
   robots: {
     index: true,

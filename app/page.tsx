@@ -108,7 +108,7 @@ export default function HomePage() {
             50+ Converters Available
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-gray-50 tracking-tight">
-            Unit Converter
+            Best Converter
             <span className="text-blue-600 dark:text-blue-400"> Pro</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-medium leading-relaxed">
@@ -198,7 +198,7 @@ export default function HomePage() {
         {/* Features Section */}
         <div className="mt-16 max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-gray-50 mb-8">
-            Why Choose Unit Converter Pro?
+            Why Choose Best Converter Pro?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center p-6">

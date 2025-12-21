@@ -1,6 +1,6 @@
-# Unit Converter Pro
+# Best Converter Pro
 
-A comprehensive, SEO-optimized unit converter web application built with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui. Features 38+ professional converters across 9 categories, optimized for Google AdSense monetization.
+A comprehensive, SEO-optimized Best Converter web application built with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui. Features 38+ professional converters across 9 categories, optimized for Google AdSense monetization.
 
 ## Features
 
@@ -16,6 +16,7 @@ A comprehensive, SEO-optimized unit converter web application built with Next.js
 ## Categories
 
 ### 1. Common Converters (7)
+
 - Length
 - Area
 - Volume
@@ -25,6 +26,7 @@ A comprehensive, SEO-optimized unit converter web application built with Next.js
 - Temperature
 
 ### 2. Engineering Converters (6)
+
 - Pressure
 - Energy
 - Power
@@ -33,6 +35,7 @@ A comprehensive, SEO-optimized unit converter web application built with Next.js
 - Density
 
 ### 3. Heat Converters (10)
+
 - Fuel Efficiency (Mass)
 - Fuel Efficiency (Volume)
 - Temperature Interval
@@ -45,14 +48,17 @@ A comprehensive, SEO-optimized unit converter web application built with Next.js
 - Heat Transfer Coefficient
 
 ### 4. Fluids Converters (2)
+
 - Flow Rate
 - Viscosity
 
 ### 5. Light Converters (2)
+
 - Luminance
 - Illuminance
 
 ### 6. Electricity Converters (5)
+
 - Voltage
 - Current
 - Resistance
@@ -60,14 +66,17 @@ A comprehensive, SEO-optimized unit converter web application built with Next.js
 - Inductance
 
 ### 7. Magnetism Converters (2)
+
 - Magnetic Flux
 - Magnetic Field Strength
 
 ### 8. Radiology Converters (2)
+
 - Radiation Dose
 - Radioactivity
 
 ### 9. Unit Systems (3)
+
 - SI Units Reference
 - Imperial Units Reference
 - CGS Units Reference
@@ -91,17 +100,20 @@ A comprehensive, SEO-optimized unit converter web application built with Next.js
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd unit-converter
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -182,7 +194,7 @@ In `app/layout.tsx`, add:
 
 ```typescript
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL("https://yourdomain.com"),
   // ... other metadata
 };
 ```
@@ -196,12 +208,14 @@ export const metadata: Metadata = {
 Replace the placeholder comments with actual AdSense code:
 
 ```tsx
-<ins className="adsbygoogle"
-     style={{ display: 'block' }}
-     data-ad-client="ca-pub-XXXXXXXX"  // Your AdSense ID
-     data-ad-slot={slot}
-     data-ad-format={format}
-     data-full-width-responsive="true"></ins>
+<ins
+  className="adsbygoogle"
+  style={{ display: "block" }}
+  data-ad-client="ca-pub-XXXXXXXX" // Your AdSense ID
+  data-ad-slot={slot}
+  data-ad-format={format}
+  data-full-width-responsive="true"
+></ins>
 ```
 
 4. Add the AdSense script to `app/layout.tsx`:
@@ -245,6 +259,7 @@ Replace the placeholder comments with actual AdSense code:
 2. **Update category** in `lib/data/categories.ts` to include the new converter ID.
 
 3. **Rebuild** the application:
+
 ```bash
 npm run build
 ```
@@ -283,16 +298,18 @@ The application can be deployed to any platform that supports Node.js:
 To add Google Analytics:
 
 1. Install next-google-analytics:
+
 ```bash
 npm install nextjs-google-analytics
 ```
 
 2. Add to `app/layout.tsx`:
+
 ```tsx
 import { GoogleAnalytics } from "nextjs-google-analytics";
 
 // In the body:
-<GoogleAnalytics trackPageViews />
+<GoogleAnalytics trackPageViews />;
 ```
 
 ## License

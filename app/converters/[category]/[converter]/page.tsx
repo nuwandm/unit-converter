@@ -22,7 +22,9 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for SEO
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { category, converter: converterSlug } = await params;
   const converterData = getConverter(category, converterSlug);
   const categoryData = getCategory(category);
@@ -34,8 +36,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const title = converterData.metaTitle || `${converterData.name} - Free Online Tool`;
-  const description = converterData.metaDescription || converterData.description;
+  const title =
+    converterData.metaTitle || `${converterData.name} - Free Online Tool`;
+  const description =
+    converterData.metaDescription || converterData.description;
   const canonicalUrl = `https://yourdomain.com/converters/${category}/${converterSlug}`;
 
   return {
@@ -46,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
       url: canonicalUrl,
-      siteName: "Unit Converter Pro",
+      siteName: "Best Converter Pro",
       type: "website",
       images: [
         {

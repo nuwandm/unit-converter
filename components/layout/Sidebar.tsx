@@ -64,7 +64,7 @@ export function Sidebar() {
           href="/"
           className="flex items-center gap-2 text-gray-900 dark:text-gray-50 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
         >
-          <h2 className="text-lg font-bold tracking-tight">Unit Converter</h2>
+          <h2 className="text-lg font-bold tracking-tight">Best Converter</h2>
         </Link>
       </div>
 
