@@ -1,0 +1,203 @@
+import { Converter } from "@/types/converter";
+
+export const engineeringConverters: Converter[] = [
+  // PRESSURE CONVERTER
+  {
+    id: "pressure",
+    name: "Pressure Converter",
+    slug: "pressure",
+    description: "Convert between Pascal, PSI, bar, atmosphere, and more pressure units",
+    category: "engineering",
+    baseUnit: "pascal",
+    units: [
+      { id: "pascal", name: "Pascal", symbol: "Pa", type: "si" },
+      { id: "kilopascal", name: "Kilopascal", symbol: "kPa", type: "si" },
+      { id: "megapascal", name: "Megapascal", symbol: "MPa", type: "si" },
+      { id: "bar", name: "Bar", symbol: "bar", type: "si" },
+      { id: "millibar", name: "Millibar", symbol: "mbar", type: "si" },
+      { id: "atmosphere", name: "Atmosphere", symbol: "atm", type: "other" },
+      { id: "psi", name: "PSI", symbol: "psi", type: "imperial" },
+      { id: "torr", name: "Torr", symbol: "Torr", type: "other" },
+      { id: "mmHg", name: "Millimeter of Mercury", symbol: "mmHg", type: "other" },
+    ],
+    formula: {
+      type: "linear",
+      factors: {
+        "pascal": 1,
+        "kilopascal": 1000,
+        "megapascal": 1000000,
+        "bar": 100000,
+        "millibar": 100,
+        "atmosphere": 101325,
+        "psi": 6894.76,
+        "torr": 133.322,
+        "mmHg": 133.322,
+      },
+    },
+    keywords: ["pressure", "pascal", "psi", "bar", "atmosphere", "conversion"],
+    metaTitle: "Pressure Converter - Pascal, PSI, Bar, atm | Free Tool",
+    metaDescription: "Convert pressure units instantly. Pascal, PSI, bar, atmosphere, and more. Accurate pressure converter for engineers.",
+  },
+
+  // ENERGY CONVERTER
+  {
+    id: "energy",
+    name: "Energy Converter",
+    slug: "energy",
+    description: "Convert between joules, calories, BTU, kilowatt-hours, and more energy units",
+    category: "engineering",
+    baseUnit: "joule",
+    units: [
+      { id: "joule", name: "Joule", symbol: "J", type: "si" },
+      { id: "kilojoule", name: "Kilojoule", symbol: "kJ", type: "si" },
+      { id: "megajoule", name: "Megajoule", symbol: "MJ", type: "si" },
+      { id: "calorie", name: "Calorie", symbol: "cal", type: "other" },
+      { id: "kilocalorie", name: "Kilocalorie", symbol: "kcal", type: "other" },
+      { id: "watt-hour", name: "Watt-hour", symbol: "Wh", type: "si" },
+      { id: "kilowatt-hour", name: "Kilowatt-hour", symbol: "kWh", type: "si" },
+      { id: "btu", name: "BTU", symbol: "BTU", type: "imperial" },
+      { id: "electron-volt", name: "Electron Volt", symbol: "eV", type: "si" },
+    ],
+    formula: {
+      type: "linear",
+      factors: {
+        "joule": 1,
+        "kilojoule": 1000,
+        "megajoule": 1000000,
+        "calorie": 4.184,
+        "kilocalorie": 4184,
+        "watt-hour": 3600,
+        "kilowatt-hour": 3600000,
+        "btu": 1055.06,
+        "electron-volt": 1.602176634e-19,
+      },
+    },
+    keywords: ["energy", "joule", "calorie", "btu", "kilowatt-hour", "conversion"],
+    metaTitle: "Energy Converter - Joules, Calories, BTU, kWh | Free Tool",
+    metaDescription: "Convert energy units instantly. Joules, calories, BTU, kilowatt-hours, and more. Engineering energy converter.",
+  },
+
+  // POWER CONVERTER
+  {
+    id: "power",
+    name: "Power Converter",
+    slug: "power",
+    description: "Convert between watts, horsepower, kilowatts, and more power units",
+    category: "engineering",
+    baseUnit: "watt",
+    units: [
+      { id: "watt", name: "Watt", symbol: "W", type: "si" },
+      { id: "kilowatt", name: "Kilowatt", symbol: "kW", type: "si" },
+      { id: "megawatt", name: "Megawatt", symbol: "MW", type: "si" },
+      { id: "horsepower", name: "Horsepower (mechanical)", symbol: "hp", type: "imperial" },
+      { id: "horsepower-metric", name: "Horsepower (metric)", symbol: "hp", type: "si" },
+      { id: "btu-per-hour", name: "BTU per Hour", symbol: "BTU/h", type: "imperial" },
+      { id: "calorie-per-second", name: "Calorie per Second", symbol: "cal/s", type: "other" },
+    ],
+    formula: {
+      type: "linear",
+      factors: {
+        "watt": 1,
+        "kilowatt": 1000,
+        "megawatt": 1000000,
+        "horsepower": 745.7,
+        "horsepower-metric": 735.5,
+        "btu-per-hour": 0.293071,
+        "calorie-per-second": 4.184,
+      },
+    },
+    keywords: ["power", "watt", "horsepower", "kilowatt", "conversion"],
+    metaTitle: "Power Converter - Watts, Horsepower, kW | Free Tool",
+    metaDescription: "Convert power units instantly. Watts, horsepower, kilowatts, and more. Engineering power converter.",
+  },
+
+  // FORCE CONVERTER
+  {
+    id: "force",
+    name: "Force Converter",
+    slug: "force",
+    description: "Convert between newtons, pounds-force, dynes, and more force units",
+    category: "engineering",
+    baseUnit: "newton",
+    units: [
+      { id: "newton", name: "Newton", symbol: "N", type: "si" },
+      { id: "kilonewton", name: "Kilonewton", symbol: "kN", type: "si" },
+      { id: "pound-force", name: "Pound-force", symbol: "lbf", type: "imperial" },
+      { id: "kilogram-force", name: "Kilogram-force", symbol: "kgf", type: "other" },
+      { id: "dyne", name: "Dyne", symbol: "dyn", type: "cgs" },
+    ],
+    formula: {
+      type: "linear",
+      factors: {
+        "newton": 1,
+        "kilonewton": 1000,
+        "pound-force": 4.44822,
+        "kilogram-force": 9.80665,
+        "dyne": 0.00001,
+      },
+    },
+    keywords: ["force", "newton", "pound-force", "dyne", "conversion"],
+    metaTitle: "Force Converter - Newtons, lbf, kgf | Free Tool",
+    metaDescription: "Convert force units instantly. Newtons, pounds-force, kilograms-force, dynes, and more.",
+  },
+
+  // TORQUE CONVERTER
+  {
+    id: "torque",
+    name: "Torque Converter",
+    slug: "torque",
+    description: "Convert between newton-meters, pound-feet, pound-inches, and more torque units",
+    category: "engineering",
+    baseUnit: "newton-meter",
+    units: [
+      { id: "newton-meter", name: "Newton-meter", symbol: "N·m", type: "si" },
+      { id: "pound-foot", name: "Pound-foot", symbol: "lb·ft", type: "imperial" },
+      { id: "pound-inch", name: "Pound-inch", symbol: "lb·in", type: "imperial" },
+      { id: "kilogram-meter", name: "Kilogram-meter", symbol: "kg·m", type: "other" },
+      { id: "dyne-centimeter", name: "Dyne-centimeter", symbol: "dyn·cm", type: "cgs" },
+    ],
+    formula: {
+      type: "linear",
+      factors: {
+        "newton-meter": 1,
+        "pound-foot": 1.35582,
+        "pound-inch": 0.112985,
+        "kilogram-meter": 9.80665,
+        "dyne-centimeter": 0.0000001,
+      },
+    },
+    keywords: ["torque", "newton-meter", "pound-foot", "conversion"],
+    metaTitle: "Torque Converter - N·m, lb·ft, lb·in | Free Tool",
+    metaDescription: "Convert torque units instantly. Newton-meters, pound-feet, pound-inches, and more.",
+  },
+
+  // DENSITY CONVERTER
+  {
+    id: "density",
+    name: "Density Converter",
+    slug: "density",
+    description: "Convert between kg/m³, g/cm³, lb/ft³, and more density units",
+    category: "engineering",
+    baseUnit: "kilogram-per-cubic-meter",
+    units: [
+      { id: "kilogram-per-cubic-meter", name: "Kilogram per Cubic Meter", symbol: "kg/m³", type: "si" },
+      { id: "gram-per-cubic-centimeter", name: "Gram per Cubic Centimeter", symbol: "g/cm³", type: "cgs" },
+      { id: "gram-per-liter", name: "Gram per Liter", symbol: "g/L", type: "si" },
+      { id: "pound-per-cubic-foot", name: "Pound per Cubic Foot", symbol: "lb/ft³", type: "imperial" },
+      { id: "pound-per-cubic-inch", name: "Pound per Cubic Inch", symbol: "lb/in³", type: "imperial" },
+    ],
+    formula: {
+      type: "linear",
+      factors: {
+        "kilogram-per-cubic-meter": 1,
+        "gram-per-cubic-centimeter": 1000,
+        "gram-per-liter": 1,
+        "pound-per-cubic-foot": 16.0185,
+        "pound-per-cubic-inch": 27679.9,
+      },
+    },
+    keywords: ["density", "kg/m3", "g/cm3", "lb/ft3", "conversion"],
+    metaTitle: "Density Converter - kg/m³, g/cm³, lb/ft³ | Free Tool",
+    metaDescription: "Convert density units instantly. kg/m³, g/cm³, lb/ft³, and more. Engineering density converter.",
+  },
+];
