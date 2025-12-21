@@ -40,7 +40,7 @@ export async function generateMetadata({
     converterData.metaTitle || `${converterData.name} - Free Online Tool`;
   const description =
     converterData.metaDescription || converterData.description;
-  const canonicalUrl = `https://yourdomain.com/converters/${category}/${converterSlug}`;
+  const canonicalUrl = `https://bestconverts.com/converters/${category}/${converterSlug}`;
 
   return {
     title,

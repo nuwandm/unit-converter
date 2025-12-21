@@ -17,19 +17,19 @@ export function Breadcrumbs({ category, converter }: BreadcrumbsProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://yourdomain.com",
+        item: "https://bestconverts.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: category.name,
-        item: `https://yourdomain.com/converters/${category.slug}`,
+        item: `https://bestconverts.com/converters/${category.slug}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: converter.name,
-        item: `https://yourdomain.com/converters/${category.slug}/${converter.slug}`,
+        item: `https://bestconverts.com/converters/${category.slug}/${converter.slug}`,
       },
     ],
   };
@@ -38,10 +38,15 @@ export function Breadcrumbs({ category, converter }: BreadcrumbsProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData),
+        }}
       />
 
-      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+      <nav
+        aria-label="Breadcrumb"
+        className="flex items-center gap-2 text-sm text-muted-foreground mb-4"
+      >
         <Link
           href="/"
           className="flex items-center hover:text-foreground transition-colors"

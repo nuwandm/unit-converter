@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllConverterPaths } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://yourdomain.com";
+  const baseUrl = "https://bestconverts.com";
 
   // Homepage
   const routes: MetadataRoute.Sitemap = [

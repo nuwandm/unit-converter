@@ -180,7 +180,7 @@ unit-converter/
 
 ### Update Domain
 
-Replace `https://yourdomain.com` with your actual domain in:
+Replace `https://bestconverts.com` with your actual domain in:
 
 1. `app/converters/[category]/[converter]/page.tsx` (metadata generation)
 2. `app/sitemap.ts`
@@ -194,7 +194,7 @@ In `app/layout.tsx`, add:
 
 ```typescript
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://bestconverts.com"),
   // ... other metadata
 };
 ```

@@ -11,7 +11,7 @@ export function StructuredData({ converter, category }: StructuredDataProps) {
     "@type": "WebApplication",
     name: converter.name,
     description: converter.description,
-    url: `https://yourdomain.com/converters/${category}/${converter.slug}`,
+    url: `https://bestconverts.com/converters/${category}/${converter.slug}`,
     applicationCategory: "UtilityApplication",
     operatingSystem: "Web",
     offers: {
