@@ -59,14 +59,6 @@ export function Sidebar() {
 
   return (
     <aside className="hidden lg:block w-64 border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 sticky top-0 h-screen">
-      <div className="p-4 border-b border-gray-200 dark:border-gray-800">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-gray-900 dark:text-gray-50 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
-        >
-          <h2 className="text-lg font-bold tracking-tight">Best Converter</h2>
-        </Link>
-      </div>
 
       {/* Search Input */}
       <div className="p-4 border-b border-gray-200 dark:border-gray-800">

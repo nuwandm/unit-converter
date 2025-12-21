@@ -340,7 +340,7 @@ export function ConverterInterface({ converter }: ConverterInterfaceProps) {
               onChange={handleFromValueChange}
               className={cn(
                 "w-full text-5xl font-light border-0 outline-none bg-transparent text-gray-900 dark:text-gray-50 placeholder:text-gray-300 dark:placeholder:text-gray-700 pr-24 transition-all",
-                fromInputError && "animate-shake text-red-500",
+                fromInputError && "animate-shake !text-red-500 dark:!text-red-400",
                 fromResultUpdated && "animate-value-update"
               )}
               placeholder="0"
@@ -406,7 +406,7 @@ export function ConverterInterface({ converter }: ConverterInterfaceProps) {
               onChange={handleToValueChange}
               className={cn(
                 "w-full text-5xl font-light border-0 outline-none bg-transparent text-gray-900 dark:text-gray-50 placeholder:text-gray-300 dark:placeholder:text-gray-700 pr-24 transition-all",
-                toInputError && "animate-shake text-red-500",
+                toInputError && "animate-shake !text-red-500 dark:!text-red-400",
                 resultUpdated && "animate-value-update"
               )}
               placeholder="0"
@@ -437,13 +437,25 @@ export function ConverterInterface({ converter }: ConverterInterfaceProps) {
       </div>
 
       {/* Formula display */}
-      <div className="mt-6 text-center text-sm font-medium text-gray-600 dark:text-gray-300">
+      <div className="mt-6 text-center">
         {fromValue && toValue ? (
-          <p className="animate-value-update">
-            {fromValue} {getUnitDisplay(fromUnit)} = {toValue} {getUnitDisplay(toUnit)}
-          </p>
+          <div className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 rounded-xl border border-blue-100 dark:border-blue-900 shadow-sm">
+            <span className="text-lg font-semibold text-blue-700 dark:text-blue-300">
+              {fromValue}
+            </span>
+            <span className="text-sm text-blue-600 dark:text-blue-400">
+              {getUnitDisplay(fromUnit)}
+            </span>
+            <span className="text-lg font-bold text-gray-400 dark:text-gray-500 mx-1">=</span>
+            <span className="text-lg font-semibold text-green-700 dark:text-green-300">
+              {toValue}
+            </span>
+            <span className="text-sm text-green-600 dark:text-green-400">
+              {getUnitDisplay(toUnit)}
+            </span>
+          </div>
         ) : (
-          <p className="text-gray-400 dark:text-gray-600">
+          <p className="text-sm text-gray-400 dark:text-gray-500 font-medium">
             Enter a value to see the conversion
           </p>
         )}
